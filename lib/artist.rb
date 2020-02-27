@@ -36,7 +36,7 @@ attr_accessor :name, :songs
   
   def self.create(name)
     artist = self.new(name)
-    @@all << artist
+    #@@all << artist
     artist
   end
   
