@@ -19,7 +19,7 @@ attr_accessor :name, :artist
   end
   
   def artist_name=(artist)
-   self.artist = Artist.find_or_create_by_name(artist)
-   self.artist.add_song(self)
+   artist = Artist.find_or_create_by_name(artist)
+   artist.add_song(self)
   end
 end
