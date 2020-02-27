@@ -3,7 +3,7 @@ attr_accessor :name, :songs
 @@all = [].uniq
   def initialize(name)
     @name = name
-    @songs = []
+    @songs = [].uniq
     @@all << self
   end
   
