@@ -37,7 +37,7 @@ attr_accessor :name, :songs
   def self.create(name)
     artist = self.new(name)
     @@all << artist
-    artist.uniq
+    artist
   end
   
   def save
