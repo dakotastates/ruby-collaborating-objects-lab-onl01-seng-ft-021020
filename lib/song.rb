@@ -7,7 +7,7 @@ attr_accessor :name, :artist
   end
   
   def self.all
-    @@all.uniq
+    @@all
   end
 
   def self.new_by_filename(file)
