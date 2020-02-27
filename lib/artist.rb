@@ -1,9 +1,9 @@
 class Artist 
 attr_accessor :name, :songs
-@@all = []
+@@all = [].uniq
   def initialize(name)
     @name = name
-    @songs = [].uniq
+    @songs = []
     @@all << self
   end
   
