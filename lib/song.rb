@@ -3,7 +3,7 @@ attr_accessor :name, :artist
 @@all = []
   def initialize(name)
     @name = name
-    @@all << self
+    @@all << self.uniq
   end
   
   def self.all
