@@ -12,7 +12,7 @@ attr_accessor :name, :songs
   end
   
   def add_song(song)
-    @songs << song
+    @songs << song.uniq
     song.artist = self
   end
   
@@ -41,7 +41,7 @@ attr_accessor :name, :songs
   end
   
   def save
-    @@all << self.uniq
+    @@all << self
   end
     
   def print_songs()
