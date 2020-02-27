@@ -1,6 +1,6 @@
 class Song 
 attr_accessor :name, :artist
-@@all = []
+@@all = [].uniq
   def initialize(name)
     @name = name
     @@all << self
