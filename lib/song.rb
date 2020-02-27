@@ -21,6 +21,6 @@ attr_accessor :name, :artist
   def artist_name=(artist)
    artist = Artist.find_or_create_by_name(artist)
    artist.add_song(self)
-   puts Artist.all
+   Artist.all = Artist.all.uniq 
   end
 end
