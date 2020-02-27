@@ -41,7 +41,7 @@ attr_accessor :name, :songs
   end
   
   def save
-    @@all << self
+    @@all << self.uniq
   end
     
   def print_songs()
