@@ -23,5 +23,6 @@ attr_accessor :name, :artist
     artist = Artist.find_or_create_by_name(artist)
     artist.add_song(self)
     puts artist
+    puts Artist.all
   end
 end
