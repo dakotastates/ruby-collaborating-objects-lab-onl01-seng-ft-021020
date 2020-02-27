@@ -1,9 +1,9 @@
 class Artist 
 attr_accessor :name, :songs
-@@all = [].uniq
+@@all = []
   def initialize(name)
     @name = name
-    @songs = [].uniq
+    @songs = []
     @@all << self
   end
   
@@ -37,7 +37,7 @@ attr_accessor :name, :songs
   def self.create(name)
     artist = self.new(name)
     @@all << artist
-    artist
+    artist.uniq
   end
   
   def save
